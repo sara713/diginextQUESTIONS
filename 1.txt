@@ -1,0 +1,15 @@
+#diginext q1 string, find and count num of a's in string
+def funcnumA(st,n):
+  a=len(st)
+  c=0#counter
+  r=st
+  while len(r)<n :
+    r=r+st[c]
+    c+=1
+    if c==a:
+      c=0
+    
+  return r.count('a')
+
+funcnumA('abcac',10)
+"# diginextQUESTIONS" 
